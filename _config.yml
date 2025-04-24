@@ -37,7 +37,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "raulverrei@gmail.com"
-  github: RaulVerea
+  github: https://github.com/RaulVerea
   linkedin: https://www.linkedin.com/in/raul-verea-reina/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"

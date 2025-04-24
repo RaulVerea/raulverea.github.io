@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloud Infrastructure in Biomedicine: Transforming Healthcare
+title: Cloud Infrastructure in Biomedicine. Transforming Healthcare
 subtitle: Exploring the Role of Cloud Computing in Advancing Biomedical Research and Healthcare
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]

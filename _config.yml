@@ -112,7 +112,7 @@ navbar-var-length: false
 
 page-col: "#F4F4F4"  # Soft neutral background tone
 text-col: "#333333"  # Dark text color for good readability
-link-col: "#0066CC"  # Professional and eye-catching blue for links
+link-col: "#F4F4F4"  # Professional and eye-catching blue for links
 hover-col: "#004C99"  # Darker blue for hover effect, for interaction
 navbar-col: "#364395"  # Dark gray for the navigation bar background
 navbar-text-col: "#FFFFFF"  # White for text in the navigation bar

@@ -126,7 +126,7 @@ footer-hover-col: "#1ABC9C"  # Soft green for the hover effect on footer links
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/images/header.jpeg"
+#navbar-img: "/images/header.jpeg"
 footer-img: "/images/footer.jpeg"
 #page-img: "/assets/img/bgimage.png"
 

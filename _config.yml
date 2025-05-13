@@ -10,6 +10,8 @@ author: Raúl Verea Reina
 
 navbar-links:
   About Me: "aboutme"
+  Tag Index: "tag-index"  # Agrega aquí tu nueva página
+
 
 ################
 # --- Logo --- #
@@ -124,8 +126,8 @@ footer-hover-col: "#1ABC9C"  # Verde suave para el hover de los enlaces en el pi
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "images/header/iop.jpg"
-footer-img: "images/footer/iop.jpg"
+navbar-img: "/images/header.jpg"
+footer-img: "/images/footer.jpg"
 #page-img: "/assets/img/bgimage.png"
 
 

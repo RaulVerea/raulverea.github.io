@@ -10,6 +10,7 @@ author: Raúl Verea Reina
 
 navbar-links:
   About Me: "aboutme"
+  Tag Index: "tags_index.html"  # Agrega aquí tu nueva página
 
 
 ################
@@ -113,7 +114,7 @@ page-col: "#F4F4F4"  # Soft neutral background tone
 text-col: "#333333"  # Dark text color for good readability
 link-col: "#0066CC"  # Professional and eye-catching blue for links
 hover-col: "#004C99"  # Darker blue for hover effect, for interaction
-navbar-col: "#2C3E50"  # Dark gray for the navigation bar background
+navbar-col: "#364395"  # Dark gray for the navigation bar background
 navbar-text-col: "#FFFFFF"  # White for text in the navigation bar
 navbar-border-col: "#BDC3C7"  # Soft gray for the navigation bar border
 footer-col: "#34495E"  # Dark gray for the footer background

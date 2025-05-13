@@ -7,7 +7,7 @@ comments: true
 mathjax: true
 author: Raúl Verea
 ---
-
+<div style="margin: 20px;">
 {: .box-success}
 In recent years, Digital Twins (DHTs) have emerged as one of the most exciting innovations in healthcare. These virtual replicas of human beings are revolutionizing the way we approach personalized medicine. By combining real-time data, advanced simulations, and cloud computing, DHTs are helping doctors provide more precise treatments tailored to each patient’s unique genetic and physiological profile.
 
@@ -76,3 +76,4 @@ As healthcare continues to evolve, the use of cloud computing and Digital Twins 
 
 Papachristou, K.; Katsakiori, P.F.; Papadimitroulas, P.; Strigari, L.; Kagadis, G.C. (2024). "Digital Twins’ Advancements and Applications in Healthcare, Towards Precision Medicine." Journal of Personalized Medicine, 14(11), 1101. DOI: 10.3390/jpm14111101
 
+</div>

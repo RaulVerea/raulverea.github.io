@@ -1,5 +1,5 @@
 remote_theme: daattali/beautiful-jekyll@6.0.1
-title: Biomedical Stuff and more!
+title: Biomedical Stuff and more with Raúl!
 author: Raúl Verea Reina
 
 ###############################################
@@ -10,7 +10,7 @@ author: Raúl Verea Reina
 
 navbar-links:
   About Me: "aboutme"
-  Tag Index: "tags-index.html"  # Agrega aquí tu nueva página
+  Tag Index: "tags_index.html"  # Agrega aquí tu nueva página
 
 
 ################
@@ -110,17 +110,17 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#F4F4F4"  # Suave tono neutro de fondo
-text-col: "#333333"  # Color de texto oscuro para buena legibilidad
-link-col: "#0066CC"  # Azul profesional y llamativo para enlaces
-hover-col: "#004C99"  # Azul más oscuro para el hover, para dar interacción
-navbar-col: "#2C3E50"  # Un gris oscuro para el fondo de la barra de navegación
-navbar-text-col: "#FFFFFF"  # Blanco para el texto en la barra de navegación
-navbar-border-col: "#BDC3C7"  # Gris suave para el borde de la barra de navegación
-footer-col: "#34495E"  # Gris oscuro para el fondo del pie de página
-footer-text-col: "#ECF0F1"  # Texto claro en el pie de página para buena legibilidad
-footer-link-col: "#3498DB"  # Azul para los enlaces en el pie de página
-footer-hover-col: "#1ABC9C"  # Verde suave para el hover de los enlaces en el pie de página
+page-col: "#F4F4F4"  # Soft neutral background tone
+text-col: "#333333"  # Dark text color for good readability
+link-col: "#0066CC"  # Professional and eye-catching blue for links
+hover-col: "#004C99"  # Darker blue for hover effect, for interaction
+navbar-col: "#2C3E50"  # Dark gray for the navigation bar background
+navbar-text-col: "#FFFFFF"  # White for text in the navigation bar
+navbar-border-col: "#BDC3C7"  # Soft gray for the navigation bar border
+footer-col: "#34495E"  # Dark gray for the footer background
+footer-text-col: "#ECF0F1"  # Light text color in the footer for good readability
+footer-link-col: "#ECF0F1"  # Light text for links in the footer
+footer-hover-col: "#1ABC9C"  # Soft green for the hover effect on footer links
 
 
 # Alternatively, the navbar, footer, and page background can be set to an image

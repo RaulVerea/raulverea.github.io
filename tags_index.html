@@ -12,25 +12,85 @@ title: 'Tag Index'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
-
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
+<!-- Display tag buttons with clean styling -->
+<div class="tag-buttons-container">
+    {%- for tag in tags_list -%}
+        <a href="#{{ tag }}" class="tag-button">
+            <i class="fas fa-tag" aria-hidden="true"></i>
+            {{ tag }} ({{ site.tags[tag].size }})
+        </a>
+    {%- endfor -%}
 </div>
+
+<!-- Full tag list with posts for each tag -->
+<div id="full-tags-list">
+    {%- for tag in tags_list -%}
+        <section id="{{ tag }}" class="tag-section">
+            <h2 class="tag-heading">
+                <i class="fas fa-tag" aria-hidden="true"></i>
+                {{ tag }} ({{ site.tags[tag].size }})
+            </h2>
+            <div class="posts-for-tag">
+                {%- for post in site.tags[tag] -%}
+                    <div class="post-entry">
+                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title | strip_html }}</a>
+                        <div class="entry-date">
+                            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </section>
+    {%- endfor -%}
+</div>
+
+<!-- Styles for the page (can be added to your CSS file) -->
+<style>
+    /* Styling for the tag buttons */
+    .tag-buttons-container {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .tag-button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .tag-button:hover {
+        background-color: #2980b9;
+    }
+
+    /* Styling for each tag section */
+    .tag-section {
+        margin: 30px 0;
+    }
+    .tag-heading {
+        font-size: 24px;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for each post entry */
+    .posts-for-tag {
+        margin-left: 20px;
+    }
+    .post-entry {
+        margin-bottom: 15px;
+    }
+    .post-title {
+        font-weight: bold;
+        color: #2980b9;
+        text-decoration: none;
+    }
+    .post-title:hover {
+        text-decoration: underline;
+    }
+    .entry-date {
+        font-size: 14px;
+        color: #7f8c8d;
+    }
+</style>

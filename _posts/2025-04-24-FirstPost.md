@@ -2,8 +2,6 @@
 layout: post
 title: Digital Twins and Their Impact on Personalized Medicine
 subtitle: Exploring the Role of Digital Twins in Advancing Precision Healthcare
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [Digital Twins, Cloud Infrastructure, Precision Medicine, AI in Healthcare]
 comments: true
 mathjax: true

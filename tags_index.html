@@ -12,92 +12,25 @@ title: 'Tags'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-<!-- Display tag buttons with a more stylish design -->
-<div class="tag-buttons-container">
-    {%- for tag in tags_list -%}
-        <a href="#{{ tag }}" class="tag-button">
-            <i class="fas fa-tag" aria-hidden="true"></i> {{ tag }} ({{ site.tags[tag].size }})
-        </a>
-    {%- endfor -%}
-</div>
+{%- for tag in tags_list -%}
+    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+{%- endfor -%}
 
-<!-- Full list of tags with corresponding posts -->
 <div id="full-tags-list">
-    {%- for tag in tags_list -%}
-        <section id="{{ tag }}" class="tag-section">
-            <h2 class="tag-heading">
-                <i class="fas fa-tag" aria-hidden="true"></i> {{ tag }} ({{ site.tags[tag].size }})
-            </h2>
-            <div class="posts-for-tag">
-                {%- for post in site.tags[tag] -%}
-                    <div class="post-entry">
-                        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title | strip_html }}</a>
-                        <div class="entry-date">
-                            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
-                        </div>
-                    </div>
-                {%- endfor -%}
+{%- for tag in tags_list -%}
+    <h2 id="{{- tag -}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+    </h2>
+    <div class="post-list">
+        {%- for post in site.tags[tag] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                </div>
             </div>
-        </section>
-    {%- endfor -%}
+        {%- endfor -%}
+    </div>
+{%- endfor -%}
 </div>
-
-<!-- Custom styles for this page -->
-<style>
-    /* Styling for the tag buttons */
-    .tag-buttons-container {
-        margin: 20px 0;
-        text-align: center;
-    }
-    .tag-button {
-        background-color: #3498db;
-        color: white;
-        padding: 12px 25px;
-        margin: 8px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size: 16px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    .tag-button:hover {
-        background-color: #2980b9;
-        transform: scale(1.05);
-    }
-
-    /* Styling for the tag sections */
-    .tag-section {
-        margin: 40px 0;
-        padding: 20px;
-        background-color: #ecf0f1;
-        border-radius: 8px;
-    }
-    .tag-heading {
-        font-size: 28px;
-        color: #2c3e50;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-
-    /* Styling for post entries within tags */
-    .posts-for-tag {
-        margin-left: 20px;
-    }
-    .post-entry {
-        margin-bottom: 18px;
-    }
-    .post-title {
-        font-weight: bold;
-        color: #2980b9;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    .post-title:hover {
-        text-decoration: underline;
-    }
-
-    /* Styling for the entry date */
-    .entry-date {
-        font-size: 14px;
-        color: #7f8c8d;
-    }
-</style>

@@ -10,7 +10,6 @@ author: Raúl Verea Reina
 
 navbar-links:
   About Me: "aboutme"
-  Tag Index: "tags_index.html"  # Agrega aquí tu nueva página
 
 
 ################
@@ -120,7 +119,7 @@ navbar-border-col: "#BDC3C7"  # Soft gray for the navigation bar border
 footer-col: "#34495E"  # Dark gray for the footer background
 footer-text-col: "#ECF0F1"  # Light text color in the footer for good readability
 footer-link-col: "#ECF0F1"  # Light text for links in the footer
-footer-hover-col: "#1ABC9C"  # Soft green for the hover effect on footer links
+footer-hover-col: "#3498DB"  # Soft green for the hover effect on footer links
 
 
 # Alternatively, the navbar, footer, and page background can be set to an image

@@ -126,8 +126,8 @@ footer-hover-col: "#1ABC9C"  # Verde suave para el hover de los enlaces en el pi
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/images/header.jpg"
-footer-img: "/images/footer.jpg"
+navbar-img: "/images/header.jpeg"
+footer-img: "/images/footer.jpeg"
 #page-img: "/assets/img/bgimage.png"
 
 

@@ -10,7 +10,7 @@ author: Raúl Verea Reina
 
 navbar-links:
   About Me: "aboutme"
-  Tag Index: "tags-index"  # Agrega aquí tu nueva página
+  Tag Index: "tags-index.html"  # Agrega aquí tu nueva página
 
 
 ################
